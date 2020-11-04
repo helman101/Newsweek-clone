@@ -6,7 +6,7 @@
 @font-face {
     font-family: 'Genericons';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     src:
       url(/assets/fonts/Genericons.woff) format("woff");
 }
@@ -20,7 +20,7 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     src:
@@ -28,8 +28,16 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
+}
+
+p {
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+main {
+  margin-top: 100px;
 }
 
 .n-bar {
@@ -41,12 +49,28 @@ h1, h2, h3, h4, h5, h6 {
   fill: white;
 }
 
-.stories {
-	margin: 10px 0;
+.category{
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 8px 25px 9px;
+  background-color: rgba(255, 255, 255, 0.753);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.stories img {
-	margin-right: 5px;
+.title {
+  font-size: 1.8rem;
+  line-height: 24px;
+}
+
+.s-tlt {
+  font-size: 1.2rem;
+}
+
+.n-img {
+  width: 100%;
+
 }
 
 
