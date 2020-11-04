@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Genericons';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      url(/assets/fonts/Genericons.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src:
+      url(/assets/fonts/robotocondensed-bold-webfont.woff2) format("woff");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      url(/assets/fonts/robotocondensed-regular-webfont.woff2) format("woff");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.n-bar {
+  min-height: 50px;
+  
+}
+
+.n-bar svg{
+  fill: white;
+}
+
+
+
