@@ -37,9 +37,16 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
-.n-bar svg{
+.n-bar svg {
   fill: white;
 }
 
+.stories {
+	margin: 10px 0;
+}
+
+.stories img {
+	margin-right: 5px;
+}
 
 
