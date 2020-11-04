@@ -130,3 +130,9 @@
   .f-head {
   margin-top: 50px;
   }
+
+  .three-news div{
+    min-height: 100px;
+    padding: 15px 0;
+    
+  }
