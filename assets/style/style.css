@@ -1,111 +1,132 @@
 * {
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: 'Genericons';
-    font-style: normal;
-    font-weight: 500;
-    src:
-      url(/assets/fonts/Genericons.woff) format("woff");
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src:
-      url(/assets/fonts/robotocondensed-bold-webfont.woff2) format("woff");
-}
-
-@font-face {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    src:
-      url(/assets/fonts/robotocondensed-regular-webfont.woff2) format("woff");
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-}
-
-p {
-  font-family: Arial,Helvetica,sans-serif;
-}
-
-main {
-  margin-top: 100px;
-}
-
-.n-bar {
-  min-height: 50px;
+  margin: 0;
+  padding: 0;
+  }
   
-}
-
-.n-bar svg {
+  @font-face {
+  font-family: 'Genericons';
+  font-style: normal;
+  font-weight: 500;
+  src:
+  url(/assets/fonts/Genericons.woff) format("woff");
+  }
+  
+  @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src:
+  url(/assets/fonts/robotocondensed-bold-webfont.woff2) format("woff");
+  }
+  
+  @font-face {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src:
+  url(/assets/fonts/robotocondensed-regular-webfont.woff2) format("woff");
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  }
+  
+  p, li {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 0.9rem;
+  }
+  
+  main {
+  margin-top: 100px;
+  }
+  
+  .n-bar {
+  min-height: 45px;
+  }
+  
+  .n-bar svg {
   fill: white;
-}
-
-.category{
+  }
+  
+  .nav-icon {
+  width: 130px;
+  }
+  
+  .category{
   bottom: 0;
   left: 0;
   z-index: 1;
-  padding: 8px 25px 9px;
+  padding: 2px 20px 2px;
   background-color: rgba(255, 255, 255, 0.753);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
-}
-
-.n-culture .category {
+  }
+  
+  .n-culture .category {
   background-color: #c2d4d7;
-}
-
-.n-cont .title {
-  font-size: 1.7rem;
-  line-height: 24px;
-}
-
-.stories .title {
+  }
+  
+  .n-cont .title {
   font-size: 1.2rem;
   line-height: 24px;
-}
-
-.s-tlt {
+  }
+  
+  .stories .title {
   font-size: 1.2rem;
-}
-
-.n-img {
+  line-height: 24px;
+  }
+  
+  .s-tlt {
+  font-size: 1.2rem;
+  }
+  
+  .n-img {
   width: 100%;
-}
-
-.d-pic {
+  }
+  
+  .d-pic {
   width: 63px;
   height: 63px;
-}
-
-.vs {
+  }
+  
+  .vs {
   width: 32px;
   height: 32px;
   font-size: 1.2rem;
-}
-
-.l-form {
+  }
+  
+  .l-form {
   padding: 20px;
-}
-
-.email {
+  }
+  
+  .email {
   height: 35px;
-}
-
-.n-icon {
+  }
+  
+  .n-icon {
   min-width: 29px;
   height: 28px;
   background: url(/assets/Newsweek-images/logo-n1.svg) 50% 50% no-repeat;
-}
-
-.c-footer {
+  }
+  
+  .c-footer {
   padding: 2px 5px;
-}
+  }
+  
+  footer svg {
+  fill: red;
+  width: 75%;
+  }
+  
+  .copy-r {
+  font-size: 0.7rem;
+  }
+  
+  .social .link {
+  width: 26px;
+  }
+  
+  .f-head {
+  margin-top: 50px;
+  }
