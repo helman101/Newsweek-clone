@@ -73,4 +73,13 @@ main {
 
 }
 
+.d-pic {
+  width: 63px;
+  height: 63px;
+}
 
+.vs {
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+}
