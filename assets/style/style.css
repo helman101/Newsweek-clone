@@ -105,3 +105,7 @@ main {
   height: 28px;
   background: url(/assets/Newsweek-images/logo-n1.svg) 50% 50% no-repeat;
 }
+
+.c-footer {
+  padding: 2px 5px;
+}
