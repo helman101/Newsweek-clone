@@ -59,8 +59,17 @@ main {
   font-weight: bold;
 }
 
-.title {
-  font-size: 1.8rem;
+.n-culture .category {
+  background-color: #c2d4d7;
+}
+
+.n-cont .title {
+  font-size: 1.7rem;
+  line-height: 24px;
+}
+
+.stories .title {
+  font-size: 1.2rem;
   line-height: 24px;
 }
 
@@ -70,7 +79,6 @@ main {
 
 .n-img {
   width: 100%;
-
 }
 
 .d-pic {
@@ -82,4 +90,18 @@ main {
   width: 32px;
   height: 32px;
   font-size: 1.2rem;
+}
+
+.l-form {
+  padding: 20px;
+}
+
+.email {
+  height: 35px;
+}
+
+.n-icon {
+  min-width: 29px;
+  height: 28px;
+  background: url(/assets/Newsweek-images/logo-n1.svg) 50% 50% no-repeat;
 }
