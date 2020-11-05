@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +53,13 @@
   font-size: 1.2rem;
   font-weight: bold;
   }
+  
+  @media screen and (min-width: 992px) {
+  .category {
+  font-size: 0.9rem;
+  }
+  }
+  
   .n-culture .category {
   background-color: #c2d4d7;
   }
@@ -59,6 +67,9 @@
   font-size: 1.2rem;
   line-height: 24px;
   }
+  
+  .my-turn
+  
   .stories .title {
   font-size: 1.2rem;
   line-height: 24px;
@@ -105,9 +116,3 @@
   .f-head {
   margin-top: 50px;
   }
-  
-  .three-news div{
-  min-height: 100px;
-  padding: 15px 0;
-  }
-  
