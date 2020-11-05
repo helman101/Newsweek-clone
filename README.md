@@ -20,7 +20,7 @@
 
 ## Phone UI
 
-![screenshot](assets/mobile-screenshot.png)
+![screenshot](assets/mobile-screeenshot.png)
 
 
 
