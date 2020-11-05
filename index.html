@@ -32,8 +32,9 @@
     </nav>
   </header>
   <main>
+		<div class="container row">
     <!--Top Story-->
-    <section class="n-cont container-fluid border-bottom">
+    <section class="n-cont col-4 order-2 container-fluid border-bottom">
       <h6 class="s-tlt text-secondary mb-2 mt-2">TOP STORY</h6>
       <div class="mb-3 position-relative">
         <img class="n-img img-fluid d-inline" src="/assets/Newsweek-images/donald-trump (2).jpg" alt="">
@@ -46,7 +47,7 @@
         would "put it down within minutes."</p>
     </section>
     <!--Featured Stories-->
-    <section class="mt-5 border-bottom container">
+    <section class="mt-5 order-1 col-3 border-bottom container">
       <h6 class="s-tlt text-secondary mb-2 mt-2">FEATURED STORIES</h6>
 
       <article class="n-cont container-fluid">
@@ -102,7 +103,7 @@
     </section>
 
     <!--The Debate-->
-    <section class="container-fluid mt-5">
+    <section class="col-3 order-3 container-fluid mt-5">
 
       <article class="border-bottom pb-3">
         <h5 class="border-bottom text-secondary font-weight-bold h6 pb-3">THE DEBATE</h5>
@@ -187,7 +188,7 @@
       </article>
 
     </section>
-    <!-- seperate news -->
+    <!-- Sponsored -->
     <section class="container-sm">
       <div class="n-cont container-fluid">
         <div class="mb-3 position-relative">
@@ -390,7 +391,7 @@
       </div>
 
     </section>
-
+		<!-- my turn -->
     <section class="container my-turn">
       <h6 class="s-tlt text-secondary mb-2 mt-2">MY TURN</h6>
 
@@ -442,7 +443,7 @@
       </div>
 
     </section>
-    <!--Separate News-->
+    <!--Sponsored-->
     <section class="container border-bottom">
 
       <div class="n-cont container-fluid">
@@ -526,8 +527,9 @@
         </p>
       </div>
 
-    </section>
-
+		</section>
+		</div>
+			<!-- The magazine -->
     <section class="container magazine d-flex flex-column justify-content-center">
       <div class="d-flex justify-content-center mb-3">
         <span class="n-icon bg-danger mr-2"></span>
@@ -914,35 +916,38 @@
         </div>
       </article>
     </section>
-
-    <section class="n-cont mb-5 container subs">
-      <h6 class="s-tlt text-danger mb-2 mt-2">SUBSCRIBE</h6>
-      <div class="position-relative">
-        <img class="" src="/assets/Newsweek-images/cover-november-06-11-2020 (1).jpg" alt="photo">
-        <img class="position-absolute z-index-1 left-0" src="/assets/Newsweek-images/cover-october-30-2020.jpg"
-          alt="photo">
-      </div>
-
-      <div class="text-center">
-        <h4 class="title mb-3">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h4>
-        <p class="mb-3">All Access + Weekly Delivery.<br>Choose A Membership That's Perfect for You!</p>
-        <button class="btn bg-danger rounded mx-auto d-block font-weight-bold text-white">SUBSCRIBE &gt;</button>
-      </div>
-    </section>
-
-    <section class="container newsletter">
-      <h6 class="s-tlt text-danger mb-2 mt-2">NEWSLETTER</h6>
-      <img class="img-fluid mb-4" src="/assets/Newsweek-images/starting5-homepage.png" alt="photo">
-      <div class="text-center p-1">
-        <h4>THE STARTING 5</h4>
-        <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
-        <form class="d-flex mb-5 justify-content-center" action="#">
-          <input type="email" placeholder="Email address">
-          <button class="btn btn-danger text-white rounded-0" type="submit">FREE SIGN UP &gt</button>
-        </form>
-      </div>
-    </section>
-
+		<div class="d-lg-flex justify-content-lg-between  container-fluid">
+			<section class="n-cont subs container-fluid my-auto">
+				<h6 class="s-tlt text-danger mb-2 mt-2">SUBSCRIBE</h6>
+				<div class="d-flex container-fluid justify-content-between py-5 px-3 bg-light px-0">
+					<div class=" position-relative mr-5">
+						<img class="img-fluid" src="/assets/Newsweek-images/cover-november-06-11-2020 (1).jpg" alt="photo">
+						<img class="img-fluid position-absolute fixed-bottom fixed-left "
+							src="/assets/Newsweek-images/cover-october-30-2020.jpg" alt="photo">
+					</div>
+					<div class="text-center ml-auto ">
+						<h2 class="display-6 text-justify">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h2>
+						<p class="lead text-justify">All Access + Weekly Delivery.Choose A Membership That's Perfect for You!</p>
+						<button class="btn bg-danger btn-lg rounded mr-auto d-block font-weight-bold text-white">SUBSCRIBE &gt;</button>
+					</div>
+				</div>
+			</section>
+			<section class="jumbotron jumbotron-fluid newsletter bg-white my-auto">
+				<h6 class="s-tlt text-danger mx-2 ml-3">NEWSLETTER</h6>
+				<div class="d-lg-flex container-fluid">
+					<img class="img-fluid" src="/assets/Newsweek-images/starting5-homepage.png" alt="photo">
+					<div class="container-fluid">
+						<h4 class="display-6">THE STARTING 5</h4>
+						<p class="lead text-justify">See why nearly a quarter of a million subscribers begin their day with the Starting 5.
+						</p>
+						<form class="d-flex mb-5 justify-content-center" action="#">
+							<input type="email" placeholder="Email address">
+							<button class="btn btn-danger text-white rounded-0" type="submit">FREE SIGN UP &gt</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
   </main>
   <footer class="container-fluid border-top">
     <div class="f-head border-bottom">
