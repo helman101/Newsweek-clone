@@ -6,21 +6,21 @@
 
 ## Desktop UI
 
-![screenshot](./assets/desktop-screenshot-.png)
+![screenshot](assets/desktop-screenshot.png)
 
 
 
 
 ## Tablet UI
 
-![screenshot](./assets/tablet-screenshot.png)
+![screenshot](assets/Tablet-screenshot.png)
 
 
 
 
 ## Phone UI
 
-![screenshot](./assets/mobile-screenshot.png)
+![screenshot](assets/mobile-screenshot.png)
 
 
 

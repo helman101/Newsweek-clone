@@ -7,21 +7,21 @@
   font-style: normal;
   font-weight: 500;
   src:
-  url(/assets/fonts/Genericons.woff) format("woff");
+  url(assets/fonts/Genericons.woff) format("woff");
   }
   @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   src:
-  url(/assets/fonts/robotocondensed-bold-webfont.woff2) format("woff");
+  url(assets/fonts/robotocondensed-bold-webfont.woff2) format("woff");
   }
   @font-face {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   src:
-  url(/assets/fonts/robotocondensed-regular-webfont.woff2) format("woff");
+  url(assets/fonts/robotocondensed-regular-webfont.woff2) format("woff");
   }
   h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
@@ -93,7 +93,7 @@
   .n-icon {
   min-width: 29px;
   height: 28px;
-  background: url(/assets/Newsweek-images/logo-n1.svg) 50% 50% no-repeat;
+  background: url(assets/Newsweek-images/logo-n1.svg) 50% 50% no-repeat;
   }
   .c-footer {
   padding: 2px 5px;
