@@ -7,21 +7,21 @@
   font-family: 'Genericons';
   font-style: normal;
   font-weight: 500;
-  src: url(./../assets/fonts/Genericons.woff) format("woff");
+  src: url(/assets/fonts/Genericons.woff) format("woff");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url(./../assets/fonts/robotocondensed-bold-webfont.woff2) format("woff");
+  src: url(/assets/fonts/robotocondensed-bold-webfont.woff2) format("woff");
 }
 
 @font-face {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  src: url(./../assets/fonts/robotocondensed-regular-webfont.woff2) format("woff");
+  src: url(/assets/fonts/robotocondensed-regular-webfont.woff2) format("woff");
 }
 
 h1,
@@ -37,7 +37,7 @@ h6 {
 p,
 li {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 main {
@@ -65,13 +65,13 @@ footer svg {
   bottom: 0;
   left: 0;
   z-index: 1;
-  padding: 2px 20px 2px;
+  padding: 5px 20px 2px;
   background-color: rgba(255, 255, 255, 0.753);
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .category {
     font-size: 0.9rem;
   }
@@ -81,12 +81,12 @@ footer svg {
   background-color: #c2d4d7;
 }
 
-.n-cont .title {
-  font-size: 1.2rem;
+.n-cont .title, .more-stories .title {
+  font-size: 1.6rem;
   line-height: 24px;
 }
 
-.my-turn .stories .title {
+.my-turn .title, .culture-travel .title{
   font-size: 1.2rem;
   line-height: 24px;
 }
@@ -119,9 +119,8 @@ footer svg {
 }
 
 .n-icon {
-  min-width: 29px;
-  height: 28px;
-  background: url(./../assets/Newsweek-images/logo-n1.svg) 50% 50% no-repeat;
+  min-width: 39px;
+  height: 38px;
 }
 
 .c-footer {
@@ -146,6 +145,6 @@ footer svg {
   margin-top: 50px;
 }
 
-.subs p {
-  font-size: 0.9rem;
+.icon-tlt {
+  font-size: 1.5rem;
 }
