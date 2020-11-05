@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   }
-  
   @font-face {
   font-family: 'Genericons';
   font-style: normal;
@@ -10,7 +9,6 @@
   src:
   url(/assets/fonts/Genericons.woff) format("woff");
   }
-  
   @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -18,7 +16,6 @@
   src:
   url(/assets/fonts/robotocondensed-bold-webfont.woff2) format("woff");
   }
-  
   @font-face {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -26,33 +23,26 @@
   src:
   url(/assets/fonts/robotocondensed-regular-webfont.woff2) format("woff");
   }
-  
   h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   }
-  
   p, li {
   font-family: Arial,Helvetica,sans-serif;
   font-size: 0.9rem;
   }
-  
   main {
   margin-top: 100px;
   }
-  
   .n-bar {
   min-height: 45px;
   }
-  
   .n-bar svg {
   fill: white;
   }
-  
   .nav-icon {
   width: 130px;
   }
-  
   .category{
   bottom: 0;
   left: 0;
@@ -62,77 +52,62 @@
   font-size: 1.2rem;
   font-weight: bold;
   }
-  
   .n-culture .category {
   background-color: #c2d4d7;
   }
-  
   .n-cont .title {
   font-size: 1.2rem;
   line-height: 24px;
   }
-  
   .stories .title {
   font-size: 1.2rem;
   line-height: 24px;
   }
-  
   .s-tlt {
   font-size: 1.2rem;
   }
-  
   .n-img {
   width: 100%;
   }
-  
   .d-pic {
   width: 63px;
   height: 63px;
   }
-  
   .vs {
   width: 32px;
   height: 32px;
   font-size: 1.2rem;
   }
-  
   .l-form {
   padding: 20px;
   }
-  
   .email {
   height: 35px;
   }
-  
   .n-icon {
   min-width: 29px;
   height: 28px;
   background: url(/assets/Newsweek-images/logo-n1.svg) 50% 50% no-repeat;
   }
-  
   .c-footer {
   padding: 2px 5px;
   }
-  
   footer svg {
   fill: red;
   width: 75%;
   }
-  
   .copy-r {
   font-size: 0.7rem;
   }
-  
   .social .link {
   width: 26px;
   }
-  
   .f-head {
   margin-top: 50px;
   }
-
+  
   .three-news div{
-    min-height: 100px;
-    padding: 15px 0;
-    
+  min-height: 100px;
+  padding: 15px 0;
   }
+  
