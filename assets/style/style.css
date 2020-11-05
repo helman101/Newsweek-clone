@@ -108,6 +108,13 @@
   .social .link {
   width: 26px;
   }
+
+  @media screen and (min-width: 768px) {
+    .social .link {
+      width: 40px;
+    }
+  }
+
   .f-head {
   margin-top: 50px;
   }
