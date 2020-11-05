@@ -1,49 +1,67 @@
 * {
   margin: 0;
   padding: 0;
-  }
-  @font-face {
+}
+
+@font-face {
   font-family: 'Genericons';
   font-style: normal;
   font-weight: 500;
-  src:
-  url(./../assets/fonts/Genericons.woff) format("woff");
-  }
-  @font-face {
+  src: url(./../assets/fonts/Genericons.woff) format("woff");
+}
+
+@font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src:
-  url(./../assets/fonts/robotocondensed-bold-webfont.woff2) format("woff");
-  }
-  @font-face {
+  src: url(./../assets/fonts/robotocondensed-bold-webfont.woff2) format("woff");
+}
+
+@font-face {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  src:
-  url(./../assets/fonts/robotocondensed-regular-webfont.woff2) format("woff");
-  }
-  h1, h2, h3, h4, h5, h6 {
+  src: url(./../assets/fonts/robotocondensed-regular-webfont.woff2) format("woff");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  }
-  p, li {
-  font-family: Arial,Helvetica,sans-serif;
+}
+
+p,
+li {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
-  }
-  main {
+}
+
+main {
   margin-top: 100px;
-  }
-  .n-bar {
+}
+
+.n-bar {
   min-height: 45px;
-  }
-  .n-bar svg {
+}
+
+footer svg {
+  fill: red;
+  height: 50px;
+}
+
+.n-bar svg {
   fill: white;
-  }
-  .nav-icon {
+}
+
+.nav-icon {
   width: 130px;
-  }
-  .category{
+}
+
+.category {
   bottom: 0;
   left: 0;
   z-index: 1;
@@ -51,76 +69,83 @@
   background-color: rgba(255, 255, 255, 0.753);
   font-size: 1.2rem;
   font-weight: bold;
-  }
-  @media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 992px) {
   .category {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
   }
-  }
-  .n-culture .category {
+}
+
+.n-culture .category {
   background-color: #c2d4d7;
-  }
-  .n-cont .title {
+}
+
+.n-cont .title {
   font-size: 1.2rem;
   line-height: 24px;
-  }
-  .my-turn
-  .stories .title {
+}
+
+.my-turn .stories .title {
   font-size: 1.2rem;
   line-height: 24px;
-  }
-  .s-tlt {
+}
+
+.s-tlt {
   font-size: 1.2rem;
-  }
-  .n-img {
+}
+
+.n-img {
   width: 100%;
-  }
-  .d-pic {
+}
+
+.d-pic {
   width: 63px;
   height: 63px;
-  }
-  .vs {
+}
+
+.vs {
   width: 32px;
   height: 32px;
   font-size: 1.2rem;
-  }
-  .l-form {
+}
+
+.l-form {
   padding: 20px;
-  }
-  .email {
+}
+
+.email {
   height: 35px;
-  }
-  .n-icon {
+}
+
+.n-icon {
   min-width: 29px;
   height: 28px;
   background: url(./../assets/Newsweek-images/logo-n1.svg) 50% 50% no-repeat;
-  }
-  .c-footer {
+}
+
+.c-footer {
   padding: 2px 5px;
-  }
-  footer svg {
-  fill: red;
-  height: 50px;
-  }
-  .copy-r {
+}
+
+.copy-r {
   font-size: 0.7rem;
-  }
-  .social .link {
+}
+
+.social .link {
   width: 26px;
-  }
+}
 
-  @media screen and (min-width: 768px) {
-    .social .link {
-      width: 40px;
-    }
+@media screen and (min-width: 768px) {
+  .social .link {
+    width: 40px;
   }
+}
 
-  .f-head {
+.f-head {
   margin-top: 50px;
-  }
-  
-  
-  .subs p {
+}
+
+.subs p {
   font-size: 0.9rem;
-  }
-  
+}
