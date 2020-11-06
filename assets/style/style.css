@@ -152,7 +152,7 @@ footer svg {
 }
 
 .nav-big {
-	background-color: #f72210;
+  background-color: #f72210;
 }
 
 .nav-big span {
@@ -165,9 +165,9 @@ footer svg {
 }
 
 .nav-big svg {
-  cursor: pointer
+  cursor: pointer;
 }
 
-.subs p{
+.subs p {
   font-size: 1rem;
 }
