@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Genericons';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/assets/fonts/Genericons.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/assets/fonts/robotocondensed-bold-webfont.woff2) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/robotocondensed-regular-webfont.woff2) format("woff");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+p,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+main {
+  margin-top: 70px;
+}
+
+.n-bar {
+  min-height: 80px;
+}
+
+footer svg {
+  fill: red;
+  height: 50px;
+}
+
+.n-bar svg {
+  fill: white;
+}
+
+.nav-icon {
+  width: 130px;
+}
+
+.category {
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 5px 20px 2px;
+  background-color: rgba(255, 255, 255, 0.753);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  .category {
+    font-size: 0.9rem;
+  }
+}
+
+.n-culture .category {
+  background-color: #c2d4d7;
+}
+
+.n-cont .title,
+.more-stories .title {
+  font-size: 1.8rem;
+  line-height: 24px;
+}
+
+.my-turn .title,
+.culture-travel .title {
+  font-size: 1.2rem;
+  line-height: 24px;
+}
+
+.s-tlt {
+  font-size: 1.2rem;
+}
+
+.n-img {
+  width: 100%;
+}
+
+.d-pic {
+  width: 63px;
+  height: 63px;
+}
+
+.vs {
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+}
+
+.l-form {
+  padding: 20px;
+}
+
+.email {
+  height: 35px;
+}
+
+.n-icon {
+  min-width: 39px;
+  height: 38px;
+}
+
+.c-footer {
+  padding: 2px 5px;
+}
+
+.copy-r {
+  font-size: 0.7rem;
+}
+
+.social .link {
+  width: 26px;
+}
+
+@media screen and (min-width: 768px) {
+  .social .link {
+    width: 40px;
+  }
+}
+
+.f-head {
+  margin-top: 50px;
+}
+
+.icon-tlt {
+  font-size: 1.5rem;
+}
+
+.bg-red {
+  background-color: #f72210;
+}
+
+.nav-big {
+  height: 130px;
+}
+
+.nav-big span {
+  font-size: 1.3rem;
+}
+
+.n-bar svg,
+.nav-img {
+  fill: white;
+}
+
+.nav-big svg {
+  height: 100px;
+  cursor: pointer;
+}
+
+.subs p {
+  font-size: 1rem;
+}
+
+.f-nav a {
+  font-size: 1rem;
+}

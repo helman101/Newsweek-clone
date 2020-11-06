@@ -1,11 +1,1628 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsweek</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
+
 <body>
-    
+  <header>
+    <!-- Big nav -->
+    <nav class="nav container-fluid pr-0 d-none d-xl-block">
+      <div class="d-flex nav-big align-items-center container-fluid py-5 bg-red">
+        <div class="d-flex justify-content-between align-items-center flex-column">
+          <span class="text-white d-flex align-items-center"><img src="assets/icon/weather-icon.png" width="30"
+              alt="">16° Rome, IT</span>
+          <span class="text-white lead font-family-bolder ">Nov 05, 2020</span>
+        </div>
+        <svg class="ml-auto nav-img pl-5" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+          <g>
+            <path class="st0"
+              d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2 L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11 c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7 l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6 H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13 c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8 c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2 C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7 h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4 c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1 c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6 c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6 C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5 h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9 c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2 c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9 C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6 c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1 c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6 v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3 c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5 h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+            </path>
+          </g>
+        </svg>
+        <h3 class="ml-auto "><a class="text-decoration-none text-white font-family-bolder" role="button"
+            href="#">LOGIN</a></h3>
+        <button class="btn btn-lg ml-4 mr-1  bg-warning rounded-pill font-weight-bold">SUBSCRIBE &gt;</button>
+      </div>
+      <div class=" d-flex mt-2 font-family-bolder align-items-center">
+        <div class=" d-flex font-family-bolder lead  ">
+          <h5><a class="display-5 mx-8 d-block text-dark border-right px-3" href="#">U.S</a></h5>
+          <h5><a class="display-5 mx-8 d-block text-dark border-right px-2" href="#">World</a></h5>
+          <h5><a class="display-5 mx-8 d-block text-dark border-right px-2" href="#">Business</a></h5>
+          <h5><a class="display-5 mx-8 d-block text-dark border-right px-2" href="#">Tech & Science</a></h5>
+          <h5><a class="display-5 mx-8 d-block text-dark border-right px-2" href="#">Culture</a></h5>
+          <h5><a class="display-5 mx-8 d-block text-dark border-right px-2" href="#">Newsgeek</a></h5>
+          <h5><a class="display-5 mx-8 d-block text-dark border-right px-2" href="#">Sports</a></h5>
+          <h5><a class="display-5 mx-8 d-block text-dark border-right px-2" href="#">Health</a></h5>
+          <h5><a class="display-5 mx-8 d-block text-dark border-right px-2" href="#">The Debate</a></h5>
+          <h5><a class="display-5 mx-8 d-block text-dark border-right px-2" href="#">Vantage</a></h5>
+          <h5><a class="display-5 mx-8 d-block text-dark px-2" href="#">weather</a></h5>
+        </div>
+        <div class="d-flex align-items-center float-left">
+          <h3 class="mx-3">Search </h3>
+          <img role="button" class="" src="assets/icon/search.png" width="30" alt="search">
+        </div>
+      </div>
+      <hr class="col-12">
+      <div class="d-flex font-family-bolder f-nav">
+        <a class="display-5 lead px-4 text-dark" href="#">TRENDING</a>
+        <a class="display-5 lead px-3 text-secondary" href="#">DONALD TRUMP</a>
+        <a class="display-5 lead px-3 text-secondary" href="#">JOE BIDEN</a>
+        <a class="display-5 lead px-3 text-secondary" href="#">2020 ELECTION</a>
+        <a class="display-5 lead px-3 text-secondary" href="#">STIMULUS PACKAGE</a>
+        <a class="display-5 lead px-3 text-secondary" href="#">CORONAVIRUS</a>
+        <a class="display-5 lead px-3 text-secondary" href="#">COUNTIES THAT COUNT</a>
+      </div>
+    </nav>
+    <hr class="col-xs-12">
+    <!--Little Nav-->
+    <nav class="n-bar navbar d-sm-flex bg-red justify-content-sm-between p-2 fixed-top d-xl-none">
+      <svg class="nav-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 395.6 60"
+        style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+        <g>
+          <path class="st0"
+            d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2 L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11 c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7 l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6 H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13 c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8 c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2 C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7 h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4 c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1 c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6 c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6 C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5 h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9 c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2 c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9 C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6 c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1 c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6 v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3 c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5 h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+          </path>
+        </g>
+      </svg>
+      <div class="mr-4">
+        <a href="#">
+          <img src="assets/icon/user.png" width="30" alt="login">
+        </a>
+        <button class="btn btn-sm bg-warning rounded-pill font-weight-bold">SUBSCRIBE &gt;</button>
+        <img class="ml-2" src="assets/icon/menu.png" width="25" alt="menu">
+      </div>
+    </nav>
+  </header>
+  <main class="container-fluid mb-5">
+    <div class="row w-100 mx-auto">
+      <div class=" col-xl-6 order-xl-2 col-lg-6 order-lg-2">
+        <!--Top Story-->
+        <section class="n-cont border-bottom">
+          <h6 class="s-tlt text-secondary mb-2 mt-2">TOP STORY</h6>
+          <div class="mb-3 position-relative">
+            <img class="n-img img-fluid d-inline" src="assets/Newsweek-images/donald-trump(2).jpg" alt="">
+            <div class="category text-danger position-absolute">U.S</div>
+          </div>
+          <a href="#" class="title text-dark">More Voters Expect Protests if Donald Trump
+            Wins the Election: Poll</a>
+          <p class="mt-3">President Donald Trump said in September that if civil unrest erupted on election night, his
+            administration
+            would "put it down within minutes."</p>
+        </section>
+        <section class="container my-turn d-none d-xl-block d-lg-block">
+          <h6 class="s-tlt text-secondary mb-2 mt-2 ">MY TURN</h6>
+
+          <div class="row container">
+            <div class="n-cont mb-3 col-xl-4 col-lg-4">
+              <img class="mb-3 n-img d-inline"
+                src="assets/Newsweek-images/voting-2020-presidential-election-absentee-ballot.jpg" alt="photo">
+              <a href="#" class="title text-secondary">'I Drove 20 Hours to Vote After Not Receiving My Absentee
+                Ballot'</a>
+            </div>
+
+            <div class="n-cont mb-3 col-xl-4 col-lg-4">
+              <img class="mb-3 n-img d-inline" src="assets/Newsweek-images/donald-trump-hillary-clinton(1).jpg"
+                alt="photo">
+              <a href="#" class="title text-secondary">My Radio Audience Made Me Realize Why Hillary Clinton Lost
+                Pennsylvania</a>
+            </div>
+
+            <div class="n-cont mb-3 col-xl-4 col-lg-4">
+              <img class="mb-3 n-img d-inline"
+                src="assets/Newsweek-images/black-women-black-families-land-real-estate(1).png" alt="photo">
+              <a href="#" class="title text-secondary">'We're Creating a City in Georgia for Black People to Live
+                Without
+                Racism'</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="container culture-travel d-none d-lg-block d-xl-block">
+          <h6 class="s-tlt text-secondary mb-2 mt-2">CULTURE & TRAVEL</h6>
+
+          <div class="row container">
+            <div class="n-culture n-cont mb-3 col-xl-4 col-lg-4">
+              <div class="mb-3 position-relative">
+                <img class="n-img d-inline" src="assets/Newsweek-images/colette-artist-pig-hero(1).jpg" alt="photo">
+                <div class="category text-dark position-absolute">FILM</div>
+              </div>
+              <a href="#" class="title text-dark">"Colette the Artist" Pig is Exactly What 2020 Needs Right Now</a>
+            </div>
+
+            <div class="n-culture n-cont mb-3 col-xl-4 col-lg-4">
+              <div class="mb-3 position-relative">
+                <img class="n-img d-inline" src="assets/Newsweek-images/toni-morrison(1).jpg" alt="photo">
+                <div class="category text-dark position-absolute">GENDER</div>
+              </div>
+              <a href="#" class="title text-dark">These Are the 57 Women Who Have Won the Nobel Prize</a>
+            </div>
+
+            <div class="n-culture n-cont mb-3 col-xl-4 col-lg-4">
+              <div class="mb-3 position-relative">
+                <img class="n-img d-inline" src="assets/Newsweek-images/100-monumental-novels-literary-history.jpg"
+                  alt="photo">
+                <div class="category text-dark position-absolute">BOOKS</div>
+              </div>
+              <a href="#" class="title text-dark">100 Monumental Novels From Literary History</a>
+            </div>
+          </div>
+        </section>
+        <!--More Stories-->
+        <section class="more-stories container-fluid mt-xl-0 pt-2 bg-white d-none d-lg-block d-xl-block">
+          <h6 class="s-tlt text-secondary mb-2 mt-2">MORE STORIES</h6>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free for Election
+              Day</a>
+            <p class="mt-1">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free for Election Day</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Donald Trump Accidentally Introduces Lil Pump As 'Little Pimp' At
+              Rally</a>
+            <p class="mt-1">"One of the big superstars of the world; Little Pimp!" is how Donald Trump introduced rapper
+              Lil
+              Pump on
+              stage at a final pre-election rally Tuesday morning.</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/trumpp.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Facebook's Plan if Donald Trump or Joe Biden Declares Early
+              ElectionVictory</a>
+            <p class="mt-1">Facebook has said it will remove content that attempts to "suppress participation,
+              intimidate
+              voters, or
+              organize to do so," and will be hunting for such issues in real-time.</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Texas Voter Turnout Skyrockets As Democrats Aim to Flip State Blue</a>
+            <p class="mt-1">Turnout in the Lone Star state this election has already eclipsed the entirety of the 2016
+              vote
+              by 8 percent.
+            </p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/crime-scene-tape(1).jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Mass Shooting at Children's Party Leaves Baby Among 3 Dead and 8
+              Injured</a>
+            <p class="mt-1">Gunmen opened fire after pulling up in a taxi outside a house where the event was taking
+              place.
+            </p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/crime-scene-tape(1).jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Pennsylvania Governor Says State Won't 'Be Intimidated' After Trump
+              Warning</a>
+            <p class="mt-1">At a rally on the eve of the election, the president said: "We have a lot of eyes on the
+              governor and his
+              friends."</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3"
+                src="assets/Newsweek-images/nypd-officers-arrest-protester-november-2020.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Which Celebrities Are Voting For Donald Trump?</a>
+            <p class="mt-1">While most of Hollywood is in the liberal camp, there is still a sizeable amount of
+              celebrity
+              support for
+              Trump.</p>
+          </div>
+
+          <div class="clearfix stories pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/jb-covid(1).jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Trump Takes Narrow Lead Over Biden in Pennsylvania</a>
+            <p class="mt-1">Of the 1,062 likely Pennsylvania voters surveyed, 47.8 percent responded in favor of Trump,
+              while 45.9
+              percent responded in support of Biden. Trump's lead is within the poll's 2.93 point margin of error, so
+              the
+              data remains too close to call.</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/turkey-earthquake.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Toddler Rescued from Rubble of Collapsed Building 3 Days after Turkey
+              Quake</a>
+            <p class="mt-1">Elif Perincek was pulled from the wreckage of her family's apartment in the city of Izmir
+              this
+              morning where
+              she had been trapped for a gruelling 65 hours.</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/turkey-earthquake.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Biden Leads Trump by 6 Points in Florida amid Coronavirus Increase:
+              Poll</a>
+            <p class="mt-1">Winning the Sunshine State and its 29 electoral college votes could be a sign that either
+              campaign is on the
+              way to victory.</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3"
+                src="assets/Newsweek-images/prince-william-comic-relief-big-night.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Prince William Blasted for COVID Secrecy: Did Palace Trace His
+              Contacts?</a>
+            <p class="mt-1">Prince William is under pressure over the "extraordinary" decision to keep his coronavirus
+              diagnosis a secret
+              as anti-monarchy campaigners ask: "Did he tell the people he was working with?"</p>
+          </div>
+
+          <div class="stories clearfix">
+            <a href="#">
+              <img class="img-fluid float-left mr-3 pt-xl-3 pb-xl-3 border-bottom"
+                src="assets/Newsweek-images/turkey-earthquake.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Pollster Who Called 2016 Correctly Says Trump Win Likely, Cites "Shy
+              Voter"</a>
+            <p class="mt-1">Robert Cahaly points to Trump supporters who avoid pollsters or lie about their choice
+              because
+              of societal
+              pressures—and says there are more now than in 2016.</p>
+          </div>
+
+        </section>
+      </div>
+      <div class="col-xl-3 col-lg-6 order-lg-1">
+        <!--Featured Stories-->
+        <section class="mt-xl-0 border-bottom mt-sm-3">
+          <h6 class="s-tlt text-secondary mb-xl-2 mt-xl-2  mb-sm-3 mt-sm-3">FEATURED STORIES</h6>
+
+          <article class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/getty-images-new-york-voting-booth(2).jpg" alt="">
+              <div class="category text-danger position-absolute">U.S</div>
+            </div>
+            <a href="#" class="title text-dark">When Will We Know the Results of the 2020 Election? A Guide to Each
+              State</a>
+            <p class="mt-3">States vary on when they close their polls on Election Day.</p>
+          </article>
+
+          <article class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/drive-thru-polling-texas.jpg" alt="">
+              <div class="category text-danger position-absolute">U.S</div>
+            </div>
+            <a href="#" class="title text-dark">When Will We Know the Results of the 2020 Election? A Guide to Each
+              State</a>
+            <p class="mt-3">States vary on when they close their polls on Election Day.</p>
+          </article>
+
+          <article class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/rush-limbaugh.jpg" alt="">
+              <div class="category text-danger position-absolute">U.S</div>
+            </div>
+            <a href="#" class="title text-dark">When Will We Know the Results of the 2020 Election? A Guide to Each
+              State</a>
+            <p class="mt-3">States vary on when they close their polls on Election Day.</p>
+          </article>
+
+          <article class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/donald-trump(1).jpg" alt="">
+              <div class="category text-danger position-absolute">U.S</div>
+            </div>
+            <a href="#" class="title text-dark">When Will We Know the Results of the 2020 Election? A Guide to Each
+              State</a>
+            <p class="mt-3">States vary on when they close their polls on Election Day.</p>
+          </article>
+
+          <article class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/afghanistan-kabul-university-attack-isis.jpg"
+                alt="">
+              <div class="category text-danger position-absolute">U.S</div>
+            </div>
+            <a href="#" class="title text-dark">When Will We Know the Results of the 2020 Election? A Guide to Each
+              State</a>
+            <p class="mt-3">States vary on when they close their polls on Election Day.</p>
+          </article>
+
+        </section>
+        <!--Separate News-->
+        <section class="container border-xl-bottom mt-xl-3 mt-sm-5 d-none d-lg-block">
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline"
+                src="assets/Newsweek-images/southern-university-science-technology-sustech.png" alt="photo">
+              <div class="category text-primary position-absolute">SPONSORED INSIGHT</div>
+            </div>
+            <a href="#" class="title text-dark">When Will We Know the Results of the 2020 Election? A Guide to Each
+              State</a>
+            <h5>Leaders in Global Education 2020</h5>
+            <p class="mt-3">What does it take to be a leader in Global Education? What sets the best Universities apart
+              from
+              the others
+              on the world stage? Find out more.</p>
+          </div>
+
+          <div class="l-form flex-column border border-dark mb-3 d-none">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <span class="n-icon bg-danger mr-2"></span>
+              <span>START YOUR DAY WITH OUR <br> TOP 5 ARTICLES</span>
+            </div>
+            <form action="#" class="form container-fluid">
+              <input class="email w-100 mb-2" type="email" placeholder="Email address"> <br>
+              <button class="btn btn-danger w-100" type="submit">FREE SIGN UP &gt;</button>
+            </form>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/americas-best-banks-2021.png" alt="photo">
+              <div class="category text-primary position-absolute">RANKINGS</div>
+            </div>
+            <a href="#" class="title text-dark">America's Best Banks 2021</a>
+            <p class="mt-3">Introducing Newsweek's first ranking of the financial institutions that best serve their
+              customers' needs in
+              today's challenging times</p>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/worlds-best-specialized-hospitals-2021.png"
+                alt="photo">
+              <div class="category text-primary position-absolute">RANKINGS</div>
+            </div>
+            <a href="#" class="title text-dark"> World's Best Specialized Hospitals 2021</a>
+            <p class="mt-3">In the first part of this special, we rank the best hospitals in cardiology, oncology and
+              endocrinology.</p>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/best-online-shops-2021.png" alt="photo">
+              <div class="category text-primary position-absolute">SPONSORED INSIGHT</div>
+            </div>
+            <a href="#" class="title text-dark">Newsweek and Statista are recognizing 1,000 shops across 39 categories
+              in
+              eight groups.</a>
+            <p class="mt-3">What does it take to be a leader in Global Education? What sets the best Universities apart
+              from
+              the others
+              on the world stage? Find out more.</p>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline"
+                src="assets/Newsweek-images/americas-best-physical-rehabilitation-centers-2020.png" alt="photo">
+              <div class="category text-primary position-absolute">RANKINGS</div>
+            </div>
+            <a href="#" class="title text-dark">America's Best Physical Rehabilitation Centers 2020</a>
+            <p class="mt-3">Finding reliable rehabilitation can be a challenge. We partnered with Statista to rank the
+              country's Best
+              Physical Rehabilitation Centers.</p>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/cul-map-otherworldly-banner.jpg" alt="photo">
+              <div class="category text-primary position-absolute">TAKE THE SURVEY</div>
+            </div>
+            <a href="#" class="title text-dark">What Brands do You Trust the Most?</a>
+            <p class="mt-3">Tell us for a chance to win. 2020 Brandspark Most Trusted Awards. Voted by consumers like
+              you.
+            </p>
+          </div>
+
+        </section>
+      </div>
+      <div class="col-xl-3 order-xl-2 order-lg-3">
+        <!--The Debate-->
+        <section class="mt-xl-0 mt-3">
+
+          <article class=" border-bottom pb-3">
+            <h5 class="border-bottom text-secondary font-weight-bold h6 pb-3">THE DEBATE</h5>
+            <div class="d-flex align-items-center">
+              <img class="d-pic d-inline float-left mr-3" src="assets/Newsweek-images/will-chamberlain.png" alt="">
+              <div>
+                <h6 class="font-weight-bold">Reform Section 230 Now</h6>
+                <h6 class="">BY WILL CHAMBERLAIN</h6>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="vs bg-dark text-white rounded-circle text-center">vs</div>
+            </div>
+            <div class="d-flex flex-end justify-content-end align-items-center">
+              <div class="mr-3">
+                <h6 class="font-weight-bold">Leave Section 230 Alone</h6>
+                <h6 class="">BY MATTHEW FEENEY</h6>
+              </div>
+              <img class="d-pic d-inline float-right" src="assets/Newsweek-images/matthew-feeney.png" alt="">
+            </div>
+          </article>
+
+          <article class="mt-3 container-fluid">
+            <h4 class="text-secondary font-weight-bold h6 pb-3">OPINION</h4>
+
+            <div class="d-flex border-bottom mb-3 pb-2">
+              <img class="d-pic float-left mr-3" src="assets/Newsweek-images/robert-reich.png" alt="">
+              <div>
+                <h6 class="font-weight-bold text-dark">FAQs About Trump, Biden and the 2020 Election</h6>
+                <h6 class="text-secondary">BY ROBERT REICH</h6>
+              </div>
+            </div>
+
+            <div class="d-flex border-bottom mb-3 pb-2">
+              <img class="d-pic float-left mr-3" src="assets/Newsweek-images/marco-rubio.png" alt="">
+              <div>
+                <h6 class="font-weight-bold text-dark">The New York Times 'Anonymous' Op-Ed was a Failure of Journalism
+                </h6>
+                <h6 class="text-secondary">BY MARCO RUBIO</h6>
+              </div>
+
+            </div>
+            <div class="d-flex border-bottom mb-3 pb-2">
+              <img class="d-pic float-left mr-3" src="assets/Newsweek-images/kristen-clarke.png" alt="">
+              <div>
+                <h6 class="font-weight-bold text-dark">Will the Supreme Court Sacrifice Democracy to Re-Elect Trump?
+                </h6>
+                <h6 class="text-secondary">BY KRISTEN CLARKE</h6>
+              </div>
+
+            </div>
+            <div class="d-flex border-bottom mb-3 pb-2">
+              <img class="d-pic float-left mr-3" src="assets/Newsweek-images/james-phillips.png" alt="">
+              <div>
+                <h6 class="font-weight-bold text-dark">Correcting Scalia's Biggest Mistake</h6>
+                <h6 class="text-secondary">BY JAMES PHILLIPS</h6>
+              </div>
+
+            </div>
+            <div class="d-flex border-bottom mb-3 pb-2">
+              <img class="d-pic float-left mr-3" src="assets/Newsweek-images/aimee-allison.png" alt="">
+              <div>
+                <h6 class="font-weight-bold text-dark">Pennsylvania Is Giving Us Hope</h6>
+                <h6 class="text-secondary">BY AIMEE ALLISON</h6>
+              </div>
+
+            </div>
+            <div class="d-flex border-bottom mb-3 pb-2">
+              <img class="d-pic float-left mr-3" src="assets/Newsweek-images/rollins.png" alt="">
+              <div>
+                <h6 class="font-weight-bold text-dark">Does President Trump Have a Plan for Health Care? Yes</h6>
+                <h6 class="text-secondary">BY BROOKE ROLLINS</h6>
+              </div>
+            </div>
+
+            <div class="d-flex border-bottom mb-3 pb-2">
+              <img class="d-pic float-left mr-3" src="assets/Newsweek-images/summer-barrios.png" alt="">
+              <div>
+                <h6 class="font-weight-bold text-dark">COVID-19 Nearly Killed My Husband. Now the GOP Is Betraying Us
+                </h6>
+                <h6 class="text-secondary">BY SUMMER BARRIOS</h6>
+              </div>
+            </div>
+
+          </article>
+        </section>
+        <!-- seperate news -->
+        <section class="container-sm">
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline"
+                src="assets/Newsweek-images/southern-university-science-technology-sustech.png" alt="photo">
+              <div class="category text-primary position-absolute">SPONSORED INSIGHT</div>
+            </div>
+            <a href="#" class="title text-dark">When Will We Know the Results of the 2020 Election? A Guide to Each
+              State</a>
+            <h5>Leaders in Global Education 2020</h5>
+            <p class="mt-3">What does it take to be a leader in Global Education? What sets the best Universities apart
+              from
+              the others
+              on the world stage? Find out more.</p>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/americas-best-banks-2021.png" alt="photo">
+              <div class="category text-primary position-absolute">RANKINGS</div>
+            </div>
+            <a href="#" class="title text-dark">America's Best Banks 2021</a>
+            <p class="mt-3">Introducing Newsweek's first ranking of the financial institutions that best serve their
+              customers' needs in
+              today's challenging times</p>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/worlds-best-specialized-hospitals-2021.png"
+                alt="photo">
+              <div class="category text-primary position-absolute">RANKINGS</div>
+            </div>
+            <a href="#" class="title text-dark"> World's Best Specialized Hospitals 2021</a>
+            <p class="mt-3">In the first part of this special, we rank the best hospitals in cardiology, oncology and
+              endocrinology.</p>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/best-online-shops-2021.png" alt="photo">
+              <div class="category text-primary position-absolute">SPONSORED INSIGHT</div>
+            </div>
+            <a href="#" class="title text-dark">Newsweek and Statista are recognizing 1,000 shops across 39 categories
+              in
+              eight groups.</a>
+            <p class="mt-3">What does it take to be a leader in Global Education? What sets the best Universities apart
+              from
+              the others
+              on the world stage? Find out more.</p>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline"
+                src="assets/Newsweek-images/americas-best-physical-rehabilitation-centers-2020.png" alt="photo">
+              <div class="category text-primary position-absolute">RANKINGS</div>
+            </div>
+            <a href="#" class="title text-dark">America's Best Physical Rehabilitation Centers 2020</a>
+            <p class="mt-3">Finding reliable rehabilitation can be a challenge. We partnered with Statista to rank the
+              country's Best
+              Physical Rehabilitation Centers.</p>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/cul-map-otherworldly-banner.jpg" alt="photo">
+              <div class="category text-primary position-absolute">TAKE THE SURVEY</div>
+            </div>
+            <a href="#" class="title text-dark">What Brands do You Trust the Most?</a>
+            <p class="mt-3">Tell us for a chance to win. 2020 Brandspark Most Trusted Awards. Voted by consumers like
+              you.
+            </p>
+          </div>
+
+        </section>
+      </div>
+      <section class="container my-turn d-none">
+        <h6 class="s-tlt text-secondary mb-2 mt-2 ">MY TURN</h6>
+
+        <div class="row container">
+          <div class="n-cont mb-3 col-xl-4">
+            <img class="mb-3 n-img d-inline"
+              src="assets/Newsweek-images/voting-2020-presidential-election-absentee-ballot.jpg" alt="photo">
+            <a href="#" class="title text-secondary">'I Drove 20 Hours to Vote After Not Receiving My Absentee
+              Ballot'</a>
+          </div>
+
+          <div class="n-cont mb-3 col-xl-4">
+            <img class="mb-3 n-img d-inline" src="assets/Newsweek-images/donald-trump-hillary-clinton(1).jpg"
+              alt="photo">
+            <a href="#" class="title text-secondary">My Radio Audience Made Me Realize Why Hillary Clinton Lost
+              Pennsylvania</a>
+          </div>
+
+          <div class="n-cont mb-3 col-xl-4">
+            <img class="mb-3 n-img d-inline"
+              src="assets/Newsweek-images/black-women-black-families-land-real-estate(1).png" alt="photo">
+            <a href="#" class="title text-secondary">'We're Creating a City in Georgia for Black People to Live
+              Without
+              Racism'</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container culture-travel d-none">
+        <h6 class="s-tlt text-secondary mb-2 mt-2">CULTURE & TRAVEL</h6>
+
+        <div class="row container">
+          <div class="n-culture n-cont mb-3 col-xl-4">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/colette-artist-pig-hero(1).jpg" alt="photo">
+              <div class="category text-dark position-absolute">FILM</div>
+            </div>
+            <a href="#" class="title text-dark">"Colette the Artist" Pig is Exactly What 2020 Needs Right Now</a>
+          </div>
+
+          <div class="n-culture n-cont mb-3 col-xl-4">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/toni-morrison(1).jpg" alt="photo">
+              <div class="category text-dark position-absolute">GENDER</div>
+            </div>
+            <a href="#" class="title text-dark">These Are the 57 Women Who Have Won the Nobel Prize</a>
+          </div>
+
+          <div class="n-culture n-cont mb-3 col-xl-4">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/100-monumental-novels-literary-history.jpg"
+                alt="photo">
+              <div class="category text-dark position-absolute">BOOKS</div>
+            </div>
+            <a href="#" class="title text-dark">100 Monumental Novels From Literary History</a>
+          </div>
+        </div>
+      </section>
+      <!--More Stories-->
+      <section class="more-stories container-fluid mt-xl-0 pt-2 bg-white d-none">
+        <h6 class="s-tlt text-secondary mb-2 mt-2">MORE STORIES</h6>
+
+        <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+          <a href="">
+            <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="photo">
+          </a>
+          <a href="#" class="title text-dark">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free for Election
+            Day</a>
+          <p class="mt-1">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free for Election Day</p>
+        </div>
+
+        <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+          <a href="#">
+            <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="photo">
+          </a>
+          <a href="#" class="title text-dark">Donald Trump Accidentally Introduces Lil Pump As 'Little Pimp' At
+            Rally</a>
+          <p class="mt-1">"One of the big superstars of the world; Little Pimp!" is how Donald Trump introduced rapper
+            Lil
+            Pump on
+            stage at a final pre-election rally Tuesday morning.</p>
+        </div>
+
+        <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+          <a href="#">
+            <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/trumpp.jpg" alt="photo">
+          </a>
+          <a href="#" class="title text-dark">Facebook's Plan if Donald Trump or Joe Biden Declares Early
+            ElectionVictory</a>
+          <p class="mt-1">Facebook has said it will remove content that attempts to "suppress participation,
+            intimidate
+            voters, or
+            organize to do so," and will be hunting for such issues in real-time.</p>
+        </div>
+
+        <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+          <a href="#">
+            <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="photo">
+          </a>
+          <a href="#" class="title text-dark">Texas Voter Turnout Skyrockets As Democrats Aim to Flip State Blue</a>
+          <p class="mt-1">Turnout in the Lone Star state this election has already eclipsed the entirety of the 2016
+            vote
+            by 8 percent.
+          </p>
+        </div>
+
+        <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+          <a href="#">
+            <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/crime-scene-tape(1).jpg" alt="photo">
+          </a>
+          <a href="#" class="title text-dark">Mass Shooting at Children's Party Leaves Baby Among 3 Dead and 8
+            Injured</a>
+          <p class="mt-1">Gunmen opened fire after pulling up in a taxi outside a house where the event was taking
+            place.
+          </p>
+        </div>
+
+        <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+          <a href="#">
+            <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/crime-scene-tape(1).jpg" alt="photo">
+          </a>
+          <a href="#" class="title text-dark">Pennsylvania Governor Says State Won't 'Be Intimidated' After Trump
+            Warning</a>
+          <p class="mt-1">At a rally on the eve of the election, the president said: "We have a lot of eyes on the
+            governor and his
+            friends."</p>
+        </div>
+
+        <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+          <a href="#">
+            <img class="img-fluid float-left mr-3"
+              src="assets/Newsweek-images/nypd-officers-arrest-protester-november-2020.jpg" alt="photo">
+          </a>
+          <a href="#" class="title text-dark">Which Celebrities Are Voting For Donald Trump?</a>
+          <p class="mt-1">While most of Hollywood is in the liberal camp, there is still a sizeable amount of
+            celebrity
+            support for
+            Trump.</p>
+        </div>
+
+        <div class="clearfix stories pt-xl-3 pb-xl-3 border-bottom">
+          <a href="#">
+            <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/jb-covid(1).jpg" alt="photo">
+          </a>
+          <a href="#" class="title text-dark">Trump Takes Narrow Lead Over Biden in Pennsylvania</a>
+          <p class="mt-1">Of the 1,062 likely Pennsylvania voters surveyed, 47.8 percent responded in favor of Trump,
+            while 45.9
+            percent responded in support of Biden. Trump's lead is within the poll's 2.93 point margin of error, so
+            the
+            data remains too close to call.</p>
+        </div>
+
+        <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+          <a href="#">
+            <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/turkey-earthquake.jpg" alt="photo">
+          </a>
+          <a href="#" class="title text-dark">Toddler Rescued from Rubble of Collapsed Building 3 Days after Turkey
+            Quake</a>
+          <p class="mt-1">Elif Perincek was pulled from the wreckage of her family's apartment in the city of Izmir
+            this
+            morning where
+            she had been trapped for a gruelling 65 hours.</p>
+        </div>
+
+        <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+          <a href="#">
+            <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/turkey-earthquake.jpg" alt="photo">
+          </a>
+          <a href="#" class="title text-dark">Biden Leads Trump by 6 Points in Florida amid Coronavirus Increase:
+            Poll</a>
+          <p class="mt-1">Winning the Sunshine State and its 29 electoral college votes could be a sign that either
+            campaign is on the
+            way to victory.</p>
+        </div>
+
+        <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+          <a href="#">
+            <img class="img-fluid float-left mr-3"
+              src="assets/Newsweek-images/prince-william-comic-relief-big-night.jpg" alt="photo">
+          </a>
+          <a href="#" class="title text-dark">Prince William Blasted for COVID Secrecy: Did Palace Trace His
+            Contacts?</a>
+          <p class="mt-1">Prince William is under pressure over the "extraordinary" decision to keep his coronavirus
+            diagnosis a secret
+            as anti-monarchy campaigners ask: "Did he tell the people he was working with?"</p>
+        </div>
+
+        <div class="stories clearfix">
+          <a href="#">
+            <img class="img-fluid float-left mr-3 pt-xl-3 pb-xl-3 border-bottom"
+              src="assets/Newsweek-images/turkey-earthquake.jpg" alt="photo">
+          </a>
+          <a href="#" class="title text-dark">Pollster Who Called 2016 Correctly Says Trump Win Likely, Cites "Shy
+            Voter"</a>
+          <p class="mt-1">Robert Cahaly points to Trump supporters who avoid pollsters or lie about their choice
+            because
+            of societal
+            pressures—and says there are more now than in 2016.</p>
+        </div>
+
+      </section>
+
+      <!--Second part-->
+      <div class="d-xl-none d-lg-none">
+        <!--More Stories-->
+        <section class="more-stories container-fluid mt-xl-0 pt-2 bg-white">
+          <h6 class="s-tlt text-secondary mb-2 mt-2">MORE STORIES</h6>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free for Election
+              Day</a>
+            <p class="mt-1">GOP Radio Host Suggests We 'Need' Kyle Rittenhouse Free for Election Day</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Donald Trump Accidentally Introduces Lil Pump As 'Little Pimp' At
+              Rally</a>
+            <p class="mt-1">"One of the big superstars of the world; Little Pimp!" is how Donald Trump introduced rapper
+              Lil
+              Pump on
+              stage at a final pre-election rally Tuesday morning.</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/trumpp.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Facebook's Plan if Donald Trump or Joe Biden Declares Early
+              ElectionVictory</a>
+            <p class="mt-1">Facebook has said it will remove content that attempts to "suppress participation,
+              intimidate
+              voters, or
+              organize to do so," and will be hunting for such issues in real-time.</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Texas Voter Turnout Skyrockets As Democrats Aim to Flip State Blue</a>
+            <p class="mt-1">Turnout in the Lone Star state this election has already eclipsed the entirety of the 2016
+              vote
+              by 8 percent.
+            </p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/crime-scene-tape(1).jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Mass Shooting at Children's Party Leaves Baby Among 3 Dead and 8
+              Injured</a>
+            <p class="mt-1">Gunmen opened fire after pulling up in a taxi outside a house where the event was taking
+              place.
+            </p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/crime-scene-tape(1).jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Pennsylvania Governor Says State Won't 'Be Intimidated' After Trump
+              Warning</a>
+            <p class="mt-1">At a rally on the eve of the election, the president said: "We have a lot of eyes on the
+              governor and his
+              friends."</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3"
+                src="assets/Newsweek-images/nypd-officers-arrest-protester-november-2020.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Which Celebrities Are Voting For Donald Trump?</a>
+            <p class="mt-1">While most of Hollywood is in the liberal camp, there is still a sizeable amount of
+              celebrity
+              support for
+              Trump.</p>
+          </div>
+
+          <div class="clearfix stories pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/jb-covid(1).jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Trump Takes Narrow Lead Over Biden in Pennsylvania</a>
+            <p class="mt-1">Of the 1,062 likely Pennsylvania voters surveyed, 47.8 percent responded in favor of Trump,
+              while 45.9
+              percent responded in support of Biden. Trump's lead is within the poll's 2.93 point margin of error, so
+              the
+              data remains too close to call.</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/turkey-earthquake.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Toddler Rescued from Rubble of Collapsed Building 3 Days after Turkey
+              Quake</a>
+            <p class="mt-1">Elif Perincek was pulled from the wreckage of her family's apartment in the city of Izmir
+              this
+              morning where
+              she had been trapped for a gruelling 65 hours.</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3" src="assets/Newsweek-images/turkey-earthquake.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Biden Leads Trump by 6 Points in Florida amid Coronavirus Increase:
+              Poll</a>
+            <p class="mt-1">Winning the Sunshine State and its 29 electoral college votes could be a sign that either
+              campaign is on the
+              way to victory.</p>
+          </div>
+
+          <div class="stories clearfix pt-xl-3 pb-xl-3 border-bottom">
+            <a href="#">
+              <img class="img-fluid float-left mr-3"
+                src="assets/Newsweek-images/prince-william-comic-relief-big-night.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Prince William Blasted for COVID Secrecy: Did Palace Trace His
+              Contacts?</a>
+            <p class="mt-1">Prince William is under pressure over the "extraordinary" decision to keep his coronavirus
+              diagnosis a secret
+              as anti-monarchy campaigners ask: "Did he tell the people he was working with?"</p>
+          </div>
+
+          <div class="stories clearfix">
+            <a href="#">
+              <img class="img-fluid float-left mr-3 pt-xl-3 pb-xl-3 border-bottom"
+                src="assets/Newsweek-images/turkey-earthquake.jpg" alt="photo">
+            </a>
+            <a href="#" class="title text-dark">Pollster Who Called 2016 Correctly Says Trump Win Likely, Cites "Shy
+              Voter"</a>
+            <p class="mt-1">Robert Cahaly points to Trump supporters who avoid pollsters or lie about their choice
+              because
+              of societal
+              pressures—and says there are more now than in 2016.</p>
+          </div>
+
+        </section>
+        <section class="container my-turn">
+          <h6 class="s-tlt text-secondary mb-2 mt-2 ">MY TURN</h6>
+
+          <div class="row container">
+            <div class="n-cont mb-3 col-xl-4">
+              <img class="mb-3 n-img d-inline"
+                src="assets/Newsweek-images/voting-2020-presidential-election-absentee-ballot.jpg" alt="photo">
+              <a href="#" class="title text-secondary">'I Drove 20 Hours to Vote After Not Receiving My Absentee
+                Ballot'</a>
+            </div>
+
+            <div class="n-cont mb-3 col-xl-4">
+              <img class="mb-3 n-img d-inline" src="assets/Newsweek-images/donald-trump-hillary-clinton(1).jpg"
+                alt="photo">
+              <a href="#" class="title text-secondary">My Radio Audience Made Me Realize Why Hillary Clinton Lost
+                Pennsylvania</a>
+            </div>
+
+            <div class="n-cont mb-3 col-xl-4">
+              <img class="mb-3 n-img d-inline"
+                src="assets/Newsweek-images/black-women-black-families-land-real-estate(1).png" alt="photo">
+              <a href="#" class="title text-secondary">'We're Creating a City in Georgia for Black People to Live
+                Without
+                Racism'</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="container culture-travel">
+          <h6 class="s-tlt text-secondary mb-2 mt-2">CULTURE & TRAVEL</h6>
+
+          <div class="row container">
+            <div class="n-culture n-cont mb-3 col-xl-4">
+              <div class="mb-3 position-relative">
+                <img class="n-img d-inline" src="assets/Newsweek-images/colette-artist-pig-hero(1).jpg" alt="photo">
+                <div class="category text-dark position-absolute">FILM</div>
+              </div>
+              <a href="#" class="title text-dark">"Colette the Artist" Pig is Exactly What 2020 Needs Right Now</a>
+            </div>
+
+            <div class="n-culture n-cont mb-3 col-xl-4">
+              <div class="mb-3 position-relative">
+                <img class="n-img d-inline" src="assets/Newsweek-images/toni-morrison(1).jpg" alt="photo">
+                <div class="category text-dark position-absolute">GENDER</div>
+              </div>
+              <a href="#" class="title text-dark">These Are the 57 Women Who Have Won the Nobel Prize</a>
+            </div>
+
+            <div class="n-culture n-cont mb-3 col-xl-4">
+              <div class="mb-3 position-relative">
+                <img class="n-img d-inline" src="assets/Newsweek-images/100-monumental-novels-literary-history.jpg"
+                  alt="photo">
+                <div class="category text-dark position-absolute">BOOKS</div>
+              </div>
+              <a href="#" class="title text-dark">100 Monumental Novels From Literary History</a>
+            </div>
+          </div>
+        </section>
+        <!--Separate News-->
+        <section class="container border-xl-bottom mt-xl-3 mt-sm-5">
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline"
+                src="assets/Newsweek-images/southern-university-science-technology-sustech.png" alt="photo">
+              <div class="category text-primary position-absolute">SPONSORED INSIGHT</div>
+            </div>
+            <a href="#" class="title text-dark">When Will We Know the Results of the 2020 Election? A Guide to Each
+              State</a>
+            <h5>Leaders in Global Education 2020</h5>
+            <p class="mt-3">What does it take to be a leader in Global Education? What sets the best Universities apart
+              from
+              the others
+              on the world stage? Find out more.</p>
+          </div>
+
+          <div class="l-form d-flex flex-column border border-dark mb-3">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <span class="n-icon bg-danger mr-2"></span>
+              <span>START YOUR DAY WITH OUR <br> TOP 5 ARTICLES</span>
+            </div>
+            <form action="#" class="form container-fluid">
+              <input class="email w-100 mb-2" type="email" placeholder="Email address"> <br>
+              <button class="btn btn-danger w-100" type="submit">FREE SIGN UP &gt;</button>
+            </form>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/americas-best-banks-2021.png" alt="photo">
+              <div class="category text-primary position-absolute">RANKINGS</div>
+            </div>
+            <a href="#" class="title text-dark">America's Best Banks 2021</a>
+            <p class="mt-3">Introducing Newsweek's first ranking of the financial institutions that best serve their
+              customers' needs in
+              today's challenging times</p>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/worlds-best-specialized-hospitals-2021.png"
+                alt="photo">
+              <div class="category text-primary position-absolute">RANKINGS</div>
+            </div>
+            <a href="#" class="title text-dark"> World's Best Specialized Hospitals 2021</a>
+            <p class="mt-3">In the first part of this special, we rank the best hospitals in cardiology, oncology and
+              endocrinology.</p>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/best-online-shops-2021.png" alt="photo">
+              <div class="category text-primary position-absolute">SPONSORED INSIGHT</div>
+            </div>
+            <a href="#" class="title text-dark">Newsweek and Statista are recognizing 1,000 shops across 39 categories
+              in
+              eight groups.</a>
+            <p class="mt-3">What does it take to be a leader in Global Education? What sets the best Universities apart
+              from
+              the others
+              on the world stage? Find out more.</p>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline"
+                src="assets/Newsweek-images/americas-best-physical-rehabilitation-centers-2020.png" alt="photo">
+              <div class="category text-primary position-absolute">RANKINGS</div>
+            </div>
+            <a href="#" class="title text-dark">America's Best Physical Rehabilitation Centers 2020</a>
+            <p class="mt-3">Finding reliable rehabilitation can be a challenge. We partnered with Statista to rank the
+              country's Best
+              Physical Rehabilitation Centers.</p>
+          </div>
+
+          <div class="n-cont container-fluid">
+            <div class="mb-3 position-relative">
+              <img class="n-img d-inline" src="assets/Newsweek-images/cul-map-otherworldly-banner.jpg" alt="photo">
+              <div class="category text-primary position-absolute">TAKE THE SURVEY</div>
+            </div>
+            <a href="#" class="title text-dark">What Brands do You Trust the Most?</a>
+            <p class="mt-3">Tell us for a chance to win. 2020 Brandspark Most Trusted Awards. Voted by consumers like
+              you.
+            </p>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+
+    <section class="container-fluid magazine d-flex flex-column justify-content-center border-bottom">
+      <div class="d-flex justify-content-center mb-3 border-bottom pt-3 pb-3">
+        <span class="n-icon bg-danger mr-2"><img src="assets/Newsweek-images/logo-n1.svg" alt=""></span>
+        <div class="icon-tlt">IN THE MAGAZINE</div>
+      </div>
+
+      <div class="row">
+        <div class="mb-3 col-lg-3 position-relative">
+          <img class="n-img d-inline" src="assets/Newsweek-images/cover-november-06-11-2020.jpg" alt="">
+          <div class="category text-danger position-absolute">November 13 ISSUE</div>
+        </div>
+
+        <div class="n-cont mb-3 col-lg-3">
+          <img class="n-img mb-2" src="assets/Newsweek-images/fe-china-influence-banner.jpg" alt="">
+          <div class="mb-2">
+            <span class="c-footer bg-danger mr-2 text-white">COVER</span>
+            <span class="c-footer bg-white text-danger">WORLD</span>
+          </div>
+          <a href="#" class="title text-dark">Exclusive: 600 U.S. Groups Linked to China Communist Party Influence
+            Effort</a>
+        </div>
+
+        <div class="n-cont mb-3 col-lg-3">
+          <img class="n-img mb-2" src="assets/Newsweek-images/fe-china-influence-banner.jpg" alt="">
+          <div class="mb-2">
+            <span class="c-footer bg-danger mr-2 text-white">PERISCOPE</span>
+            <span class="c-footer bg-white text-danger">U.S.</span>
+          </div>
+          <a href="#" class="title text-dark">With Amy Coney Barrett Confirmed, Does John Roberts Still Matter?</a>
+        </div>
+
+        <div class="n-cont mb-3 col-lg-3">
+          <img class="n-img mb-2" src="assets/Newsweek-images/fe-china-influence-banner.jpg" alt="">
+          <div class="mb-2">
+            <span class="c-footer bg-danger mr-2 text-white">PERISCOPE</span>
+            <span class="c-footer bg-white text-danger">OPINION</span>
+          </div>
+          <a href="#" class="title text-dark">Federal Legalization of Marijuana Would Be a Tragic Mistake</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="n-cont mb-3 col-lg-3">
+          <img class="n-img mb-2" src="assets/Newsweek-images/fe-china-influence-banner.jpg" alt="">
+          <div class="mb-2">
+            <span class="c-footer bg-danger mr-2 text-white">PERISCOPE</span>
+            <span class="c-footer bg-white text-danger">CULTURE</span>
+          </div>
+          <a href="#" class="title text-dark">Legalization Is the Only Way to Improve the Criminal Justice System</a>
+        </div>
+
+        <div class="n-cont mb-3 col-lg-3">
+          <img class="n-img mb-2" src="assets/Newsweek-images/fe-china-influence-banner.jpg" alt="">
+          <div class="mb-2">
+            <span class="c-footer bg-danger mr-2 text-white">DOWNTIME</span>
+            <span class="c-footer bg-white text-danger">CULTURE</span>
+          </div>
+          <a href="#" class="title text-dark">Otherworldly Natural Phenomena You've Got to See</a>
+        </div>
+
+        <div class="n-cont mb-3 col-lg-3">
+          <img class="n-img mb-2" src="assets/Newsweek-images/fe-china-influence-banner.jpg" alt="">
+          <div class="mb-2">
+            <span class="c-footer bg-danger mr-2 text-white">DOWNTIME</span>
+            <span class="c-footer bg-white text-danger">CULTURE</span>
+          </div>
+          <a href="#" class="title text-dark">Sara Gilbert on Why the Conners Are Uniquely Qualified to Handle a
+            Pandemic</a>
+        </div>
+
+        <div class="n-cont mb-3 col-lg-3">
+          <div class="mb-3 position-relative">
+            <img class="n-img d-inline" src="assets/Newsweek-images/anniversary-day.jpg" alt="">
+            <span class="category bg-danger text-white position-absolute">IN FOCUS</span>
+          </div>
+          <a href="#" class="title text-dark">ANNIVERSARY DAY</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="container-fluid editors-picks border-bottom mb-3">
+      <div class="d-flex justify-content-center mb-3 border-bottom pt-3 pb-3">
+        <span class="n-icon bg-danger mr-2"><img src="assets/Newsweek-images/logo-n1.svg" alt=""></span>
+        <div class="icon-tlt">EDITOR'S PICK</div>
+      </div>
+
+      <div class="row mb-xl-3">
+        <div class="n-cont container-fluid col-lg-6 col-xl-3">
+          <div class="mb-3 position-relative">
+            <img class="n-img d-inline" src="assets/Newsweek-images/donald-trump(4).jpg" alt="photo">
+            <div class="category text-danger position-absolute">POLITICS</div>
+          </div>
+          <a href="#" class="title text-dark">Donald Trump Will Win Election if He Beats Joe Biden in These States</a>
+          <p class="mt-3 mt-xl-1">The president's path to victory is narrow, but wins in just a few crucial states would
+            see him
+            re-eleected.
+          </p>
+        </div>
+
+        <div class="n-cont container-fluid col-lg-6 col-xl-3">
+          <div class="mb-3 position-relative">
+            <img class="n-img d-inline" src="assets/Newsweek-images/drive-thru-polling-texas(1).jpg" alt="Photo">
+            <div class="category text-danger position-absolute">POLITICS</div>
+          </div>
+          <a href="#" class="title text-dark">Trump vs Biden Policies: Election Promises From Each Candidate</a>
+          <p class="mt-3 mt-xl-1">After months of campaigning, debating, and laying out their policies, Election Day has
+            finally
+            arrived. Here
+            is where both candidates stand on key policy issues.</p>
+        </div>
+
+        <div class="n-cont container-fluid col-lg-6 col-xl-3">
+          <div class="mb-3 position-relative">
+            <img class="n-img d-inline" src="assets/Newsweek-images/president-donald-trump-campaign-stop-florida.jpg"
+              alt="photo">
+            <div class="category text-danger position-absolute">CULTURE</div>
+          </div>
+          <a href="#" class="title text-dark">Trump's 'YMCA' Dancing Video on Election Day Watched Over 10 Million
+            Times</a>
+          <p class="mt-3 mt-xl-1">The president regularly uses the '70s disco song—widely beloved as an LGBTQ+ anthem—to
+            close out
+            his rallies.
+          </p>
+        </div>
+
+        <div class="n-cont container-fluid col-lg-6 col-xl-3">
+          <div class="mb-3 position-relative">
+            <img class="n-img d-inline" src="assets/Newsweek-images/getty-images-new-york-voting-booth(1).jpg"
+              alt="photo">
+            <div class="category text-danger position-absolute">POLITICS</div>
+          </div>
+          <a href="#" class="title text-dark">Despite Trump's Attacks, Voters Want All Mail-In Ballots Counted: Poll</a>
+          <p class="mt-3 mt-xl-1">The Republican incumbent has bemoaned the prospect of a long wait for the outcome to
+            be
+            determined, calling
+            it a "terrible thing."</p>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="n-cont container-fluid col-lg-6 col-xl-3">
+          <div class="mb-3 position-relative">
+            <img class="n-img d-inline" src="assets/Newsweek-images/marin.jpg" alt="photo">
+            <div class="category text-danger position-absolute">TECH & SCIENCE</div>
+          </div>
+          <a href="#" class="title text-dark">Facebook's Plan if Donald Trump or Joe Biden Declares Early
+            ElectionVictory</a>
+          <p class="mt-3">Facebook has said it will remove content that attempts to "suppress participation, intimidate
+            voters, or
+            organize to do so," and will be hunting for such issues in real-time.</p>
+        </div>
+
+        <div class="n-cont container-fluid col-lg-6 col-xl-3">
+          <div class="mb-3 position-relative">
+            <img class="n-img d-inline"
+              src="assets/Newsweek-images/austin-texas-possible-covid-19-patient-august-2020.jpg" alt="photo">
+            <div class="category text-danger position-absolute">POLITICS</div>
+          </div>
+          <a href="#" class="title text-dark">Joe Biden Is Now More Searched Than Donald Trump</a>
+          <p class="mt-3">Hillary Clinton never overtook Donald Trump in Google searches after he became the Republican
+            nominee.</p>
+        </div>
+
+        <div class="n-cont container-fluid col-lg-6 col-xl-3">
+          <div class="mb-3 position-relative">
+            <img class="n-img d-inline"
+              src="assets/Newsweek-images/austin-texas-possible-covid-19-patient-august-2020.jpg" alt="photo">
+            <div class="category text-danger position-absolute">POLITICS</div>
+          </div>
+          <a href="#" class="title text-dark">What Barack Obama Said About Donald Trump During the Campaign</a>
+          <p class="mt-3">The former president hit the campaign trail for Joe Biden and publicly rebuked Donald Trump in
+            several stump
+            speeches.</p>
+        </div>
+
+        <div class="n-cont container-fluid col-lg-6 col-xl-3">
+          <div class="mb-3 position-relative">
+            <img class="n-img d-inline"
+              src="assets/Newsweek-images/austin-texas-possible-covid-19-patient-august-2020.jpg" alt="photo">
+            <div class="category text-danger position-absolute">CULTURE</div>
+          </div>
+          <a href="#" class="title text-dark">The Best TV & Film Election Nights and How to Watch Them</a>
+          <p class="mt-3">Election Night 2020 looks set to be long and tense, so there may be plenty of time to watch
+            some
+            election
+            night-themes TV show episodes and movies from "The West Wing," "Veep" and more.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid us border-bottom pb-3 ">
+      <h4 class="text-danger mx-1">U.S.</h4>
+      <div class="row">
+
+        <article class="mb-3 col-lg-4">
+          <img class="w-100 d-inline mb-3" src="assets/Newsweek-images/afghanistan-kabul-university-attack-isis.jpg"
+            alt="">
+          <a href="#" class="text-dark d-block">Joe Biden is Against Guns, Oil, God, and Can't Win Texas, Trump Says</a>
+        </article>
+
+        <article class="mb-3 col-lg-4">
+          <img class="w-100 d-inline mb-3" src="assets/Newsweek-images/afghanistan-kabul-university-attack-isis.jpg"
+            alt="">
+          <a href="#" class="text-dark d-block">Trump Kenosha rally
+            Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+        </article>
+
+        <article class="three-news col-lg-4">
+          <div class="border-bottom d-flex pb-sm-3 ">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+          <div class="border-bottom d-flex pb-sm-3 pt-sm-3">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+          <div class=" d-flex pb-sm-3 pt-sm-3">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="container-fluid world border-bottom pb-3">
+      <h4 class="text-danger mx-1">WORLD</h4>
+
+      <div class="row">
+        <article class="mb-3 col-lg-4">
+          <img class="w-100 d-inline mb-3" src="assets/Newsweek-images/afghanistan-kabul-university-attack-isis.jpg"
+            alt="">
+          <a href="#" class="text-dark d-block">Joe Biden is Against Guns, Oil, God, and Can't Win Texas, Trump Says</a>
+        </article>
+
+        <article class="mb-3 col-lg-4">
+          <img class="w-100 d-inline mb-3" src="assets/Newsweek-images/afghanistan-kabul-university-attack-isis.jpg"
+            alt="">
+          <a href="#" class="text-dark d-block">Trump Kenosha rally
+            Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+        </article>
+
+        <article class="three-news col-lg-4">
+          <div class="border-bottom d-flex pb-sm-3 ">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+          <div class="border-bottom d-flex pb-sm-3 pt-sm-3">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+          <div class=" d-flex pb-sm-3 pt-sm-3">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container-fluid bussines border-bottom pb-3">
+      <h4 class="text-danger mx-1">BUSSINES</h4>
+
+      <div class="row">
+        <article class="mb-3 col-lg-4">
+          <img class="w-100 d-inline mb-3" src="assets/Newsweek-images/afghanistan-kabul-university-attack-isis.jpg"
+            alt="">
+          <a href="#" class="text-dark d-block">Joe Biden is Against Guns, Oil, God, and Can't Win Texas, Trump Says</a>
+        </article>
+
+        <article class="mb-3 col-lg-4 mb-3">
+          <img class="w-100 d-inline" src="assets/Newsweek-images/afghanistan-kabul-university-attack-isis.jpg" alt="">
+          <a href="#" class="text-dark d-block">Trump Kenosha rally
+            Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+        </article>
+
+        <article class="three-news col-lg-4">
+          <div class="border-bottom d-flex pb-sm-3 ">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+          <div class="border-bottom d-flex pb-sm-3 pt-sm-3">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+          <div class=" d-flex pb-sm-3 pt-sm-3">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container-fluid tech-science border-bottom pb-3">
+      <h4 class="text-danger mx-1">TECH & SCIENCE</h4>
+
+      <div class="row">
+        <article class="mb-3 col-lg-4">
+          <img class="w-100 d-inline mb-3" src="assets/Newsweek-images/afghanistan-kabul-university-attack-isis.jpg"
+            alt="">
+          <a href="#" class="text-dark d-block">Joe Biden is Against Guns, Oil, God, and Can't Win Texas, Trump Says</a>
+        </article>
+
+        <article class="mb-3 col-lg-4 ">
+          <img class="w-100 d-inline mb-3" src="assets/Newsweek-images/afghanistan-kabul-university-attack-isis.jpg"
+            alt="">
+          <a href="#" class="text-dark d-block">Trump Kenosha rally
+            Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+        </article>
+
+        <article class="three-news col-lg-4">
+          <div class="border-bottom d-flex pb-sm-3 ">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+          <div class="border-bottom d-flex pb-sm-3 pt-sm-3">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+          <div class=" d-flex pb-sm-3 pt-sm-3">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container-fluid culture border-bottom pb-3">
+      <h4 class="text-danger py-1">CULTURE</h4>
+
+      <div class="row">
+        <article class="mb-3 col-lg-4">
+          <img class="w-100 d-inline mb-3" src="assets/Newsweek-images/afghanistan-kabul-university-attack-isis.jpg"
+            alt="">
+          <a href="#" class="text-dark d-block">Joe Biden is Against Guns, Oil, God, and Can't Win Texas, Trump Says</a>
+        </article>
+
+        <article class="mb-3 col-lg-4">
+          <img class="w-100 d-inline mb-3" src="assets/Newsweek-images/afghanistan-kabul-university-attack-isis.jpg"
+            alt="">
+          <a href="#" class="text-dark d-block">Trump Kenosha rally
+            Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+        </article>
+
+        <article class="three-news col-lg-4">
+          <div class="border-bottom d-flex pb-sm-3 ">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+          <div class="border-bottom d-flex pb-sm-3 pt-sm-3">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+          <div class=" d-flex pb-sm-3 pt-sm-3">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container-fluid sports border-bottom pb-3">
+      <h4 class="text-danger py-1">SPORTS</h4>
+
+      <div class="row">
+        <article class="mb-3 col-lg-4">
+          <img class="w-100 d-inline mb-3" src="assets/Newsweek-images/afghanistan-kabul-university-attack-isis.jpg"
+            alt="">
+          <a href="#" class="text-dark d-block">Joe Biden is Against Guns, Oil, God, and Can't Win Texas, Trump Says</a>
+        </article>
+
+        <article class="mb-3 col-lg-4">
+          <img class="w-100 d-inline mb-3" src="assets/Newsweek-images/afghanistan-kabul-university-attack-isis.jpg"
+            alt="">
+          <a href="#" class="text-dark d-block">Trump Kenosha rally
+            Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+        </article>
+
+        <article class="three-news col-lg-4">
+          <div class="border-bottom d-flex pb-sm-3 ">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+          <div class="border-bottom d-flex pb-sm-3 pt-sm-3">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+          <div class=" d-flex pb-sm-3 pt-sm-3">
+            <img class="img-fluid mr-3" src="assets/Newsweek-images/michelle-obama.jpg" alt="">
+            <a href="#" class="text-dark">Trump Kenosha rally
+              Fox News Republican Strategist Explains Why Trump Is 'In Big Trouble'</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="container-fluid row">
+      <section class="n-cont subs container-fluid my-auto col-xl-8">
+        <h6 class="s-tlt text-danger mb-2 mt-2">SUBSCRIBE</h6>
+        <div class="d-flex container-fluid justify-content-center flex-column flex-lg-row ">
+          <img class="n-img mr-xl-3 mb-2 w-25 h-auto rounded mx-auto d-block"
+            src="assets/Newsweek-images/cover-november-06-11-2020(1).jpg" alt="photo">
+          <div class="ml-auto  d-flex justify-content-center flex-column rounded mx-auto d-block">
+            <span class="display-6  mb-2 text-lg-justify">In-depth Stories You Don't See Elsewhere About Topics You
+              Want to Read!
+            </span>
+            <p class="lead text-sm-justify">All Access + Weekly Delivery.Choose A Membership That's Perfect for You!</p>
+            <button class="btn bg-danger btn-lg rounded d-block font-weight-bold text-white m-0">SUBSCRIBE
+              &gt;</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid newsletter bg-white my-auto col-xl-4">
+        <h6 class="s-tlt text-danger mb-2 mt-2">NEWSLETTER</h6>
+        <div class="d-lg-flex container-fluid">
+          <img class="rounded mx-auto d-block h-auto w-50" src="assets/Newsweek-images/starting5-homepage.png"
+            alt="photo">
+          <div class="container-fluid">
+            <h4 class="text-center mt-4">THE STARTING 5</h4>
+            <p class="lead text-center">See why nearly a quarter of a million subscribers begin their day with the
+              Starting 5.
+            </p>
+            <form class="d-flex justify-content-center flex-column" action="#">
+              <input class="" type="email" placeholder="Email address">
+              <button class="btn btn-danger text-white rounded mt-xl-3" type="submit">FREE SIGN UP &gt;</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <footer class="container-fluid border-top">
+    <div class="f-head border-bottom d-lg-flex justify-content-lg-between align-items-lg-center">
+      <div class="d-lg-flex align-items-lg-center">
+        <svg class="mb-2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+          <g>
+            <path class="st0"
+              d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2 L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11 c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7 l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6 H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13 c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8 c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2 C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7 h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4 c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1 c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6 c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6 C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5 h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9 c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2 c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9 C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6 c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1 c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6 v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3 c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5 h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+            </path>
+          </g>
+        </svg>
+        <p class="copy-r text-secondary ml-lg-3 mt-lg-5">
+          © 2020 NEWSWEEK DIGITAL LLC
+        </p>
+      </div>
+      <div class="social mb-3">
+        <a href=""><img class="link" src="assets/icon/iconfinder_icon-02_2515845.svg" alt=""></a>
+        <a href=""><img class="link" src="assets/icon/iconfinder_twitter-social-media_765208.svg" alt=""></a>
+        <a href=""><img class="link" src="assets/icon/iconfinder_SocialMedia_Instagram-Outline_2959748.svg" alt=""></a>
+        <a href=""><img class="link" src="assets/icon/iconfinder_15-tumblr_104487.svg" alt=""></a>
+        <a href=""><img class="link" src="assets/icon/iconfinder_linkedin-social-media_765228.svg" alt=""></a>
+      </div>
+    </div>
+
+    <div class="mt-3 d-flex">
+      <h6 class="mr-2 text-secondary font-weight-bold">Editions:</h6>
+      <div>
+        <ul class="list-unstyled d-flex flex-wrap">
+          <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">U.S. Edition</li>
+          <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">日本</li>
+          <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">Pakistan</li>
+          <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">Polska</li>
+          <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">România</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <ul class="list-unstyled d-flex flex-wrap">
+        <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">About Us</li>
+        <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">Corrections</li>
+        <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">Contact Us</li>
+        <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">Editorial Guidelines</li>
+        <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">Advertise</li>
+        <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">Copyright</li>
+        <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">Terms & Conditions</li>
+        <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">Privacy Policy</li>
+        <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">Cookie Policy</li>
+        <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">Terms of Sale</li>
+        <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">Archive</li>
+        <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">Announcements</li>
+        <li class="pr-2 mr-2 pl-2 ml-2 text-secondary">GDPR Privacy Settings</li>
+      </ul>
+    </div>
+  </footer>
+  <!-- jQuery and JS bundle w/ Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
