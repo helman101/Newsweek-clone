@@ -45,7 +45,7 @@ main {
 }
 
 .n-bar {
-  min-height: 45px;
+  min-height: 80px;
 }
 
 footer svg {
@@ -83,7 +83,7 @@ footer svg {
 
 .n-cont .title,
 .more-stories .title {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   line-height: 24px;
 }
 
@@ -149,4 +149,25 @@ footer svg {
 
 .icon-tlt {
   font-size: 1.5rem;
+}
+
+.nav-big {
+	background-color: #f72210;
+}
+
+.nav-big span {
+  font-size: 1rem;
+}
+
+.n-bar svg,
+.nav-img {
+  fill: white;
+}
+
+.nav-big svg {
+  cursor: pointer
+}
+
+.subs p{
+  font-size: 1rem;
 }
