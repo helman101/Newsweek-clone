@@ -81,12 +81,14 @@ footer svg {
   background-color: #c2d4d7;
 }
 
-.n-cont .title, .more-stories .title {
-  font-size: 1.6rem;
+.n-cont .title,
+.more-stories .title {
+  font-size: 1.9rem;
   line-height: 24px;
 }
 
-.my-turn .title, .culture-travel .title{
+.my-turn .title,
+.culture-travel .title {
   font-size: 1.2rem;
   line-height: 24px;
 }
