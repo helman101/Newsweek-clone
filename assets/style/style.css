@@ -41,7 +41,7 @@ li {
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .n-bar {
@@ -151,12 +151,16 @@ footer svg {
   font-size: 1.5rem;
 }
 
-.nav-big {
+.bg-red {
   background-color: #f72210;
 }
 
+.nav-big {
+  height: 130px;
+}
+
 .nav-big span {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .n-bar svg,
@@ -165,9 +169,14 @@ footer svg {
 }
 
 .nav-big svg {
+  height: 100px;
   cursor: pointer;
 }
 
 .subs p {
+  font-size: 1rem;
+}
+
+.f-nav a {
   font-size: 1rem;
 }
