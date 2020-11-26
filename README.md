@@ -40,7 +40,7 @@
 👤 **Helman Ortegon**
 
 - GitHub: [@helman101](https://github.com/helman101)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/helman-andres-5187271b1/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/helman101/)
 
 👤 **Elisha Kyakopo**
 
